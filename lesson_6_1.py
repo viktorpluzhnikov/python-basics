@@ -1,0 +1,6 @@
+mood = open("nginx_logs.txt", "r", encoding="utf-8")
+content = (mood.readline().replace(" - ", " ").replace(" - ", " ")[0:67].split())
+content.pop(1)
+content.pop(1)
+print(content)
+mood.close()
